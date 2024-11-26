@@ -122,7 +122,7 @@ void jvmLauncherLog(const char* format, ...) {
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wformat-nonliteral"
 #endif
-    vfprintf(stderr, format, args);
+    vfprintf(stderr, "%s", args);
     fprintf(stderr, "\n");
 #if defined(__GNUC__) && __GNUC__ >= 5
 #pragma GCC diagnostic pop

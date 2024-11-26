@@ -134,7 +134,7 @@ static int popenCommand(const char* cmdlineFormat, const char* arg,
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wformat-nonliteral"
 #endif
-    if (0 > snprintf(cmdline, cmdlineLenth, cmdlineFormat, arg)) {
+    if (0 > snprintf(cmdline, cmdlineLenth, "%s", arg)) {
         JP_LOG_ERRNO;
         goto cleanup;
     }

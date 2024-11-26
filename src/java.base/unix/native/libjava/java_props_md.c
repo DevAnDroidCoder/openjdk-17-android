@@ -182,7 +182,7 @@ mapLookup(char* map[], const char* key, char** value) {
 
 #ifndef P_tmpdir
 #ifdef __ANDROID__
-#define P_tmpdir "/data/data/com.itsaky.androidide/files/sysroot/tmp"
+#define P_tmpdir "/data/data/com.icst.android.appstudio/files/sysroot/tmp"
 #else
 #define P_tmpdir "/var/tmp"
 #endif

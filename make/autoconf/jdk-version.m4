@@ -441,10 +441,10 @@ AC_DEFUN_ONCE([JDKVER_SETUP_JDK_VERSION_NUMBERS],
 
   # The complete version string, with additional build information
   if test "x$VERSION_BUILD$VERSION_OPT" = x; then
-    VERSION_STRING=$VERSION_NUMBER${VERSION_PRE:+-$VERSION_PRE}-itsaky
+    VERSION_STRING=$VERSION_NUMBER${VERSION_PRE:+-$VERSION_PRE}-icst
   else
     # If either build or opt is set, we need a + separator
-    VERSION_STRING=$VERSION_NUMBER${VERSION_PRE:+-$VERSION_PRE}-itsaky+$VERSION_BUILD${VERSION_OPT:+-$VERSION_OPT}
+    VERSION_STRING=$VERSION_NUMBER${VERSION_PRE:+-$VERSION_PRE}-icst+$VERSION_BUILD${VERSION_OPT:+-$VERSION_OPT}
   fi
 
   # The short version string, just VERSION_NUMBER and PRE, if present.
